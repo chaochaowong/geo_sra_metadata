@@ -1,0 +1,85 @@
+Mar-20 13:30:08.926 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --sra_id SRP161855 --geo_series GSE120011 -with-singularity -resume
+Mar-20 13:30:09.127 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.0
+Mar-20 13:30:09.164 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/cwo11/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.2,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.0
+Mar-20 13:30:09.178 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-20 13:30:09.179 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-20 13:30:09.182 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-20 13:30:09.195 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-20 13:30:09.237 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/nextflow.config
+Mar-20 13:30:09.240 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/nextflow.config
+Mar-20 13:30:09.288 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Mar-20 13:30:09.897 [main] DEBUG nextflow.config.ConfigBuilder - Enabling execution in Singularity container as requested by command-line option `-with-singularity null`
+Mar-20 13:30:09.922 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-20 13:30:09.941 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [wise_volhard] DSL2 - revision: 39d60a5c66
+Mar-20 13:30:09.942 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-20 13:30:09.942 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-20 13:30:09.956 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/cwo11/.nextflow/secrets/store.json
+Mar-20 13:30:09.960 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@66b59b7d] - activable => nextflow.secret.LocalSecretsProvider@66b59b7d
+Mar-20 13:30:10.019 [main] DEBUG nextflow.Session - Session UUID: 5c9f8292-c60d-452b-a491-4b8bd4cb8be3
+Mar-20 13:30:10.019 [main] DEBUG nextflow.Session - Run name: wise_volhard
+Mar-20 13:30:10.019 [main] DEBUG nextflow.Session - Executor pool size: 2
+Mar-20 13:30:10.027 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-20 13:30:10.060 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.0 build 5889
+  Created: 15-10-2023 15:07 UTC (08:07 PDT)
+  System: Linux 3.10.0-1160.62.1.el7.x86_64
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 1755@pplhpc1cn020.childrens.sea.kids [172.31.192.70]
+  CPUs: 2 - Mem: 16 GB (15.8 GB) - Swap: 4 GB (4 GB) - Virtual threads ON
+Mar-20 13:30:10.116 [main] DEBUG nextflow.Session - Work-dir: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work [nfs]
+Mar-20 13:30:10.117 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/bin
+Mar-20 13:30:10.126 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-20 13:30:10.138 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-20 13:30:10.158 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-20 13:30:10.166 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Mar-20 13:30:10.287 [main] DEBUG nextflow.Session - Session start
+Mar-20 13:30:10.704 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-20 13:30:10.717 [main] INFO  nextflow.Nextflow -   Fetching SRA mata data using esearch containier (docker)
+  ================================================
+  SRA accession number: SRP161855
+  GEO accession number: GSE120011
+
+Mar-20 13:30:10.877 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GEO_SERIES_MATRIX` matches process GEO_SERIES_MATRIX
+Mar-20 13:30:10.887 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-20 13:30:10.888 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-20 13:30:10.893 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-20 13:30:10.900 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=2; memory=16 GB; capacity=2; pollInterval=100ms; dumpInterval=5m
+Mar-20 13:30:10.905 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-20 13:30:11.030 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:EDIRECT` matches process EDIRECT
+Mar-20 13:30:11.030 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-20 13:30:11.030 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-20 13:30:11.046 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:JOIN_SPR_GEO` matches process JOIN_SPR_GEO
+Mar-20 13:30:11.047 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-20 13:30:11.047 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-20 13:30:11.053 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: JOIN_SPR_GEO, EDIRECT, GEO_SERIES_MATRIX
+Mar-20 13:30:11.054 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+Mar-20 13:30:11.054 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GEO_SERIES_MATRIX
+Mar-20 13:30:11.057 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > EDIRECT
+Mar-20 13:30:11.064 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > JOIN_SPR_GEO
+Mar-20 13:30:11.072 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_3e7aa65d651daeca: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/main.nf
+Mar-20 13:30:11.072 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-20 13:30:11.072 [main] DEBUG nextflow.Session - Session await
+Mar-20 13:30:11.189 [Actor Thread 13] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Mar-20 13:30:11.235 [Actor Thread 13] INFO  nextflow.container.SingularityCache - Pulling Singularity image docker://ncbi/edirect:latest [cache /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/singularity/ncbi-edirect-latest.img]
+Mar-20 13:30:13.778 [Actor Thread 13] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=docker://ncbi/edirect:latest path=/active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/singularity/ncbi-edirect-latest.img
+Mar-20 13:30:13.947 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 13:30:13.952 [Task submitter] INFO  nextflow.Session - [1d/31f863] Submitted process > EDIRECT (1)
+Mar-20 13:30:13.971 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 13:30:13.971 [Task submitter] INFO  nextflow.Session - [46/886287] Submitted process > GEO_SERIES_MATRIX (1)
+Mar-20 13:30:15.032 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: GEO_SERIES_MATRIX (1); status: COMPLETED; exit: 0; error: -; workDir: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/46/88628767f0b49bf6a6d2e6a20f9975]
+Mar-20 13:30:19.496 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: EDIRECT (1); status: COMPLETED; exit: 0; error: -; workDir: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/1d/31f863fa9e7d44bc10499ba5515267]
+Mar-20 13:30:19.561 [Actor Thread 29] INFO  nextflow.container.SingularityCache - Pulling Singularity image docker://rocker/tidyverse:latest [cache /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/singularity/rocker-tidyverse-latest.img]
+Mar-20 13:30:23.838 [Actor Thread 29] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=docker://rocker/tidyverse:latest path=/active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/singularity/rocker-tidyverse-latest.img
+Mar-20 13:30:23.912 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-20 13:30:23.912 [Task submitter] INFO  nextflow.Session - [68/215b6b] Submitted process > JOIN_SPR_GEO (join SRA and GEO metadata)
+Mar-20 13:30:26.222 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: JOIN_SPR_GEO (join SRA and GEO metadata); status: COMPLETED; exit: 0; error: -; workDir: /active/sarthy_j/Sarthy/Sarthy_Lab/People/cwo11/Project/nf-hackathon/fetchngs_metadata/work/68/215b6bc6c0e9b906a8eeb2847c0768]
+Mar-20 13:30:26.238 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-20 13:30:26.324 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-20 13:30:26.324 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-20 13:30:26.329 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Mar-20 13:30:26.341 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=3; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=8.7s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=2; peakMemory=0; ]
+Mar-20 13:30:26.431 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-20 13:30:26.466 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-20 13:30:26.466 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

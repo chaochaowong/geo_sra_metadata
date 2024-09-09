@@ -1,0 +1,3 @@
+2024-03-20 13:29:54	2.7s	goofy_franklin	ERR	39d60a5c6626db7a5b5ffccb7a745e5a	5c9f8292-c60d-452b-a491-4b8bd4cb8be3	nextflow run main.nf --sra_id SRP161855 --geo_series GSE120011 -with-singularity -resume
+2024-03-20 13:30:10	16.4s	wise_volhard	OK	39d60a5c6626db7a5b5ffccb7a745e5a	5c9f8292-c60d-452b-a491-4b8bd4cb8be3	nextflow run main.nf --sra_id SRP161855 --geo_series GSE120011 -with-singularity -resume
+2024-03-20 14:32:17	5.4s	crazy_snyder	OK	404261566df5dc9901d2a1a4998d09d1	5c9f8292-c60d-452b-a491-4b8bd4cb8be3	nextflow run main.nf --sra_id SRP161855 --geo_series GSE120011 -with-singularity -resume
